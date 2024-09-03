@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practica_6/automatas.dart';
+import 'package:practica_6/domotica.dart';
+
 
 void main() => runApp(const MyApp());
 
@@ -22,32 +24,35 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mas Apps dentro de una :o'),
-        backgroundColor: Colors.black38,
+        title: const Text('Apps dentro de app'),
+        backgroundColor: const Color.fromARGB(255, 15, 15, 15),
       ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            DrawerHeader(
-              child: Text('ola'),
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.amber,
               ),
+              child: Text('ola'),
             ),
             ListTile(
-              title: Text('Domotica e Inmotica'),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text('Automatas'),
+              title: const Text('Domitica'),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Automatas()));
+                    MaterialPageRoute(builder: (context) => const Domotica()));
               },
             ),
             ListTile(
-              title: Text('Salir'),
+              title: const Text('Automatas'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Automatas()));
+              },
+            ),
+            ListTile(
+              title: const Text('Salir'),
               onTap: () {},
             ),
           ],
