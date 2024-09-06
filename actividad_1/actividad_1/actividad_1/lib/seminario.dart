@@ -19,7 +19,7 @@ class MateSeminario extends StatelessWidget {
             // Imagen circular en la parte superior
             CircleAvatar(
               radius: 80, // Tamaño del avatar circular
-              backgroundImage: AssetImage('icons/PCom.jpg'), // Asegúrate de tener esta imagen en tu carpeta assets
+              backgroundImage: AssetImage('assets/icons/PCom.jpg'), // Asegúrate de tener esta imagen en tu carpeta assets
             ),
             SizedBox(height: 20), // Espacio entre la imagen circular y el texto
             // Texto en negritas
@@ -37,7 +37,7 @@ class MateSeminario extends StatelessWidget {
               width: double.infinity, // Ocupa todo el ancho disponible
               height: 150,
               child: Image(
-                image: AssetImage('icons/comunicacion_banner.png'), // Asegúrate de tener esta imagen en tu carpeta assets
+                image: AssetImage('assets/icons/comunicacion_banner.png'), // Asegúrate de tener esta imagen en tu carpeta assets
                 fit: BoxFit.cover, // Ajusta la imagen para cubrir el contenedor
               ),
             ),

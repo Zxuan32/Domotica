@@ -18,7 +18,7 @@ class MateSeguridad extends StatelessWidget {
             // Imagen circular en la parte superior
             CircleAvatar(
               radius: 80, // Tamaño del avatar circular
-              backgroundImage: AssetImage('icons/PSeg.jpg'), // Imagen de perfil, asegúrate de tenerla en la carpeta de assets
+              backgroundImage: AssetImage('assets/icons/PSeg.jpg'), // Imagen de perfil, asegúrate de tenerla en la carpeta de assets
             ),
             SizedBox(height: 20), // Espacio entre la imagen circular y el texto
             // Texto en negritas
@@ -39,7 +39,7 @@ class MateSeguridad extends StatelessWidget {
                   width: double.infinity, // Ocupa todo el ancho disponible
                   height: 150,
                   child: Image(
-                    image: AssetImage('icons/seguridad_banner.png'), // Imagen rectangular, asegúrate de tenerla en la carpeta de assets
+                    image: AssetImage('assets/icons/seguridad_banner.png'), // Imagen rectangular, asegúrate de tenerla en la carpeta de assets
                     fit: BoxFit.cover, // Ajusta la imagen para cubrir el contenedor
                   ),
                 ),

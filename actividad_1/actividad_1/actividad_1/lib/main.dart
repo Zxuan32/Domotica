@@ -50,7 +50,7 @@ class MainPage extends StatelessWidget {
                   // Imagen de perfil
                   CircleAvatar(
                     radius: 45,
-                    backgroundImage: AssetImage('icons/default.webp'), // Asegúrate de tener esta imagen en tu carpeta assets
+                    backgroundImage: AssetImage('assets/icons/default.webp'), // Asegúrate de tener esta imagen en tu carpeta assets
                   ),
                   SizedBox(height: 10), // Espacio entre la imagen y el texto
                   Text(
@@ -147,7 +147,7 @@ class MainPage extends StatelessWidget {
           children: [
             // Imagen en la pantalla principal
             Image(
-              image: AssetImage('icons/main.png'), // Asegúrate de tener esta imagen en tu carpeta assets
+              image: AssetImage('assets/icons/main.png'), // Asegúrate de tener esta imagen en tu carpeta assets
             ),
             SizedBox(height: 20), // Espacio entre la imagen y el texto
             Text(

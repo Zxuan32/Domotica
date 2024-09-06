@@ -18,7 +18,7 @@ class MateSoftware extends StatelessWidget {
             // Imagen circular en la parte superior
             CircleAvatar(
               radius: 80, // Tamaño del avatar circular
-              backgroundImage: AssetImage('icons/PSof.jpg'), // Asegúrate de tener esta imagen en tu carpeta assets
+              backgroundImage: AssetImage('assets/icons/PSof.jpg'), // Asegúrate de tener esta imagen en tu carpeta assets
             ),
             SizedBox(height: 20), // Espacio entre la imagen circular y el texto
             // Texto en negritas
@@ -35,7 +35,7 @@ class MateSoftware extends StatelessWidget {
             SizedBox(
               width: double.infinity, // Ocupa todo el ancho disponible
               child: Image(
-                image: AssetImage('icons/software_banner.png'), // Asegúrate de tener esta imagen en tu carpeta assets
+                image: AssetImage('assets/icons/software_banner.png'), // Asegúrate de tener esta imagen en tu carpeta assets
                 fit: BoxFit.cover, // Ajusta la imagen para cubrir el contenedor
               ),
             ),
