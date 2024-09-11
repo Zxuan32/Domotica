@@ -7,16 +7,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Responsive',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+    return const MaterialApp(
+      home: ResponsiveDrawer()
     );
   }
 }
@@ -28,7 +20,9 @@ class ResponsiveDrawer extends StatelessWidget {
     final ancho = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(title: const Text('Ejemplo drawer responsivo')),
-      drawer: ancho,
+      drawer: ancho < 600
+      ? const MobileDrawer()
+      : const TabletDrawer(),
     );
   }
 }
@@ -37,8 +31,34 @@ class MobileDrawer extends StatelessWidget {
   const MobileDrawer({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('xd')),
-    );
-  }
+    return Drawer(
+      child: ListView(
+        children: const [
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Inicio Movil'),
+          )
+        ],
+      ),
+  );
+ }
+
+}
+
+
+class TabletDrawer extends StatelessWidget {
+  const TabletDrawer({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: const [
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Inicio Tablet'),
+          )
+        ],
+      ),
+  );
+ }
 }
